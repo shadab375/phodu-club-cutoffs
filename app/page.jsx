@@ -18,7 +18,7 @@ const Home = () => {
     } else if (selectedExam === "viteee") {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/vit`;
     } else if (selectedExam === "srmjee") {
-      window.location.href === `${process.env.NEXT_PUBLIC_BASEURL}/srmjee}`;
+      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/srmjee`;
     }
   };
 
@@ -37,6 +37,7 @@ const Home = () => {
         <option value="met">MET (Manipal Entrance Test)</option>
         <option value="comedk">COMEDK</option>
         <option value="viteee">VITEEE</option>
+        <option value="srmjee">SRMJEE</option>
       </select>
       <button
         onClick={handleSubmit}

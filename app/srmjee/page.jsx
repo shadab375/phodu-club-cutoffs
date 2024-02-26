@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const met = () => {
+const srmjee = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleChange = (event) => {
@@ -10,9 +10,9 @@ const met = () => {
 
   const handleSubmit = () => {
     if (selectedOption === "cutoffs") {
-      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/met/cutoffs`;
+      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/srmjee/cutoffs`;
     } else if (selectedOption === "predictor") {
-      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/met/predictor`;
+      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/srmjee/predictor`;
     }
   };
 
@@ -27,8 +27,8 @@ const met = () => {
         className="bg-[#252525] text-white text-2xl p-3 mb-4"
       >
         <option value="">--Please choose an option--</option>
-        <option value="cutoffs">MET Cutoffs</option>
-        <option value="predictor">MET Branch Predictor</option>
+        <option value="cutoffs">SRMJEE Cutoffs</option>
+        <option value="predictor">SRMJEE Branch Predictor</option>
       </select>
       <button
         onClick={handleSubmit}
@@ -40,4 +40,4 @@ const met = () => {
   );
 };
 
-export default met;
+export default srmjee;
