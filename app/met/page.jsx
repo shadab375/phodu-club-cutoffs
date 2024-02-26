@@ -1,8 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const met = () => {
   const [selectedOption, setSelectedOption] = useState("");
+  const [backgroundImage, setBackgroundImage] = useState("/mit-jaipur.jpg");
 
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
@@ -16,8 +17,32 @@ const met = () => {
     }
   };
 
+  useEffect(() => {
+    const images = [
+      "/mit-jaipur.jpg",
+      "/mit-manipal.jpg",
+      "/mit-bangalore.jpeg",
+      "/mit-sikkim.jpeg",
+    ];
+    let index = 0;
+    const interval = setInterval(() => {
+      index = (index + 1) % images.length;
+      setBackgroundImage(images[index]);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Clean up on component unmount
+  }, []);
+
   return (
-    <div className="bg-[#121212] text-white min-h-screen flex flex-col items-center justify-center">
+    <div
+      className="text-white min-h-screen flex flex-col items-center justify-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <h1 className="text-4xl font-bold mb-8 text-center text-white">
         Do you want cutoff or branch predictor?
       </h1>

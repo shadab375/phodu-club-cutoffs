@@ -17,7 +17,15 @@ const srmjee = () => {
   };
 
   return (
-    <div className="bg-[#121212] text-white min-h-screen flex flex-col items-center justify-center">
+    <div
+      className="text-white min-h-screen flex flex-col items-center justify-center"
+      style={{
+        backgroundImage: `url(/srm-ktr.jpg)`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <h1 className="text-4xl font-bold mb-8 text-center text-white">
         Do you want cutoff or branch predictor?
       </h1>
