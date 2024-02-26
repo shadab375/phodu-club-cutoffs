@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
-const Bitsat = () => {
+export default function Bitsat() {
   const [selectedOption, setSelectedOption] = useState("");
   const [backgroundImage, setBackgroundImage] = useState("/bits-hyderabad.jpg");
 
@@ -41,20 +42,31 @@ const Bitsat = () => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url(${backgroundImage})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           opacity: 0.7,
         }}
-      />
+      >
+        <Image
+          src={backgroundImage}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          priority={true}
+        />
+      </div>
       <h1 className="text-4xl font-bold mb-8 text-center text-white z-10">
         Do you want cutoff or branch predictor?
       </h1>
       <select
         value={selectedOption}
         onChange={handleChange}
-        className="bg-[#252525] text-white text-2xl p-3 mb-4 z-10"
+        className=" text-white text-2xl p-3 mb-4"
+        style={{
+          backdropFilter: "blur(10px)",
+          background: "rgba(18, 18, 18, 0.7)",
+        }}
       >
         <option value="">--Please choose an option--</option>
         <option value="cutoffs">BITSAT Cutoffs</option>
@@ -66,8 +78,15 @@ const Bitsat = () => {
       >
         Submit
       </button>
+      <div className="flex justify-center items-center text-white py-4 font-poppins z-10">
+        <p className="text-lg font-semibold">
+          Made with <span style={{ color: "#e39ff6" }}>❤️</span> by
+          <span className="font-bold text-white">
+            {" "}
+            phodu<span style={{ color: "#E39FF6" }}>.club</span>
+          </span>
+        </p>
+      </div>
     </div>
   );
-};
-
-export default Bitsat;
+}

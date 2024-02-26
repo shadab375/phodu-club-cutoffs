@@ -45,6 +45,15 @@ const Home = () => {
       >
         Submit
       </button>
+      <div className="flex justify-center items-center py-4 font-poppins z-10">
+        <p className="text-lg font-semibold">
+          Made with <span style={{ color: "#e39ff6" }}>❤️</span> by
+          <span className="font-bold text-white">
+            {" "}
+            phodu<span style={{ color: "#E39FF6" }}>.club</span>
+          </span>
+        </p>
+      </div>
     </div>
   );
 };
