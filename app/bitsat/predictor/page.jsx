@@ -7,7 +7,7 @@ const Predictor = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const filteredData = data.filter((item) => item[2] <= score);
+    const filteredData = sortedData.filter((item) => item[2] <= score);
     setResults(filteredData);
   };
 
@@ -51,6 +51,8 @@ const Predictor = () => {
     ["Hyderabad", "M.Sc. Mathematics", 219],
     ["Hyderabad", "M.Sc. Physics", 219],
   ];
+
+  const sortedData = data.sort((a, b) => a[2] - b[2]);
 
   return (
     <div className="flex flex-col bg-gray-900">
