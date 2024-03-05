@@ -39,6 +39,8 @@ const BitsatCutoffs = () => {
     ["Hyderabad", "M.Sc. Mathematics", 219],
     ["Hyderabad", "M.Sc. Physics", 219],
   ];
+  const sortedData = data.sort((a, b) => b[2] - a[2]);
+
   return (
     <div className="flex flex-col bg-gray-900">
       <div className="text-white px-6 py-3">
@@ -72,7 +74,7 @@ const BitsatCutoffs = () => {
                 </tr>
               </thead>
               <tbody className="bg-gray-800 divide-y divide-gray-700">
-                {data.map((row, i) => (
+                {sortedData.map((row, i) => (
                   <tr
                     key={i}
                     className={`text-gray-100 hover:bg-gray-700 transition-colors duration-200 ease-in-out ${

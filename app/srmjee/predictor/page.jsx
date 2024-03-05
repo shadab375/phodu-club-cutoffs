@@ -7,7 +7,7 @@ const srmPredictor = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const filteredData = data.filter((item) => item[2] >= cutoff);
+    const filteredData = sortedData.filter((item) => item[2] >= cutoff);
     setResults(filteredData);
   };
 
@@ -36,6 +36,7 @@ const srmPredictor = () => {
     ],
     ["SRM Institute of Science & Technology", "Genetic", 61500],
   ];
+  const sortedData = data.sort((a, b) => a[2] - b[2]);
 
   return (
     <div className="flex flex-col bg-gray-900">
@@ -43,7 +44,9 @@ const srmPredictor = () => {
         onSubmit={handleSubmit}
         className="flex flex-col items-center text-white px-6 py-3"
       >
-        <label className="text-2xl font-bold mb-2">Enter your MET rank:</label>
+        <label className="text-2xl font-bold mb-2">
+          Enter your SRMJEE rank:
+        </label>
         <input
           className="bg-gray-800 text-white text-lg rounded-lg px-4 py-2 mb-4 w-64"
           type="number"
@@ -51,7 +54,7 @@ const srmPredictor = () => {
           onChange={(e) => setCutoff(e.target.value)}
         />
         <input
-          className="bg-purple-500 text-white text-lg rounded-lg px-4 py-2 cursor-pointer hover:bg-purple-600 transition-colors duration-200 ease-in-out"
+          className="bg-purple-500 text-white text-lg rounded-lg px-4 py-2 cursor-pointer hover:bg-purple-600 transition-colors duration-200 ease-in-out rounded-md"
           type="submit"
           value="Submit"
         />
@@ -81,7 +84,7 @@ const srmPredictor = () => {
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white"
                   >
-                    Cut-off Score
+                    Cut-off Rank
                   </th>
                 </tr>
               </thead>

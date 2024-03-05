@@ -52,7 +52,7 @@ const Predictor = () => {
     ["Hyderabad", "M.Sc. Physics", 219],
   ];
 
-  const sortedData = data.sort((a, b) => a[2] - b[2]);
+  const sortedData = data.sort((a, b) => b[2] - a[2]);
 
   return (
     <div className="flex flex-col bg-gray-900">
@@ -70,7 +70,7 @@ const Predictor = () => {
           onChange={(e) => setScore(e.target.value)}
         />
         <input
-          className="bg-purple-500 text-white text-lg rounded-lg px-4 py-2 cursor-pointer hover:bg-purple-600 transition-colors duration-200 ease-in-out"
+          className="bg-purple-500 text-white text-lg rounded-lg px-4 py-2 cursor-pointer hover:bg-purple-600 transition-colors duration-200 ease-in-out rounded-md"
           type="submit"
           value="Submit"
         />

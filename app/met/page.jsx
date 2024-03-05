@@ -66,27 +66,27 @@ export default function met() {
       <select
         value={selectedOption}
         onChange={handleChange}
-        className=" text-white text-2xl p-3 mb-4"
+        className=" text-white text-2xl p-3 mb-4 rounded-md"
         style={{
           backdropFilter: "blur(10px)",
           background: "rgba(18, 18, 18, 0.7)",
         }}
       >
         <option value="" className="rounded-lg">
-          --Please choose an option--
+          Please choose an option
         </option>
         <option value="cutoffs">MET Cutoffs</option>
         <option value="predictor">MET Branch Predictor</option>
       </select>
       <button
         onClick={handleSubmit}
-        className="bg-[#E39FF6] text-[#121212] text-2xl px-6 py-3 transition-all duration-300 hover:bg-[#C31DF4] hover:scale-110 rounded-lg z-10"
+        className="bg-[#E39FF6] text-[#121212] text-2xl px-6 py-3 transition-all duration-300 hover:bg-[#C31DF4] hover:scale-110 rounded-lg z-10 rounded-md"
       >
         Submit
       </button>
       <div className="flex justify-center items-center py-4 font-poppins z-10">
         <p className="text-lg font-semibold">
-          Made with <span style={{ color: "#e39ff6" }}>❤️</span> by
+          Made with <span style={{ color: "#e39ff6" }}>💜</span> by
           <span className="font-bold text-white">
             {" "}
             phodu<span style={{ color: "#E39FF6" }}>.club</span>

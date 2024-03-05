@@ -112,7 +112,7 @@ const metCutoffs = () => {
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white"
                   >
-                    Cut-off Score
+                    Cut-off Rank
                   </th>
                 </tr>
               </thead>

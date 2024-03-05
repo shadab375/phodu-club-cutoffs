@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Bitsat() {
   const [selectedOption, setSelectedOption] = useState("");
-  const [backgroundImage, setBackgroundImage] = useState("/bits-hyderabad.jpg");
+  const [backgroundImage, setBackgroundImage] = useState("/bits-pilani.jpg");
 
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
@@ -19,12 +19,12 @@ export default function Bitsat() {
   };
 
   useEffect(() => {
+    const images = ["/bits-hyderabad.jpg", "/bits-pilani.jpg", "/bits-goa.jpg"];
+    let index = 0;
+
     const interval = setInterval(() => {
-      setBackgroundImage((prevImage) =>
-        prevImage === "/bits-hyderabad.jpg"
-          ? "/bits-pilani.jpg"
-          : "/bits-hyderabad.jpg"
-      );
+      setBackgroundImage(images[index]);
+      index = (index + 1) % images.length; // Cycle through the images
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval); // Clean up on component unmount
@@ -62,25 +62,25 @@ export default function Bitsat() {
       <select
         value={selectedOption}
         onChange={handleChange}
-        className=" text-white text-2xl p-3 mb-4"
+        className=" text-white text-2xl p-3 mb-4 rounded-md"
         style={{
           backdropFilter: "blur(10px)",
           background: "rgba(18, 18, 18, 0.7)",
         }}
       >
-        <option value="">--Please choose an option--</option>
+        <option value="">Please choose an option</option>
         <option value="cutoffs">BITSAT Cutoffs</option>
         <option value="predictor">BITSAT Branch Predictor</option>
       </select>
       <button
         onClick={handleSubmit}
-        className="bg-[#E39FF6] text-[#121212] text-2xl px-6 py-3 transition-all duration-300 hover:bg-[#C31DF4] hover:scale-110 z-10"
+        className="bg-[#E39FF6] text-[#121212] text-2xl px-6 py-3 transition-all duration-300 hover:bg-[#C31DF4] hover:scale-110 z-10 rounded-md"
       >
         Submit
       </button>
       <div className="flex justify-center items-center text-white py-4 font-poppins z-10">
         <p className="text-lg font-semibold">
-          Made with <span style={{ color: "#e39ff6" }}>❤️</span> by
+          Made with <span style={{ color: "#e39ff6" }}>💜</span> by
           <span className="font-bold text-white">
             {" "}
             phodu<span style={{ color: "#E39FF6" }}>.club</span>

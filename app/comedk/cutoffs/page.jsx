@@ -294,6 +294,8 @@ const ComedkCutoffs = () => {
       6269,
     ],
   ];
+
+  const sortedData = data.sort((a, b) => a[2] - b[2]);
   return (
     <div className="flex flex-col bg-gray-900">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -318,12 +320,12 @@ const ComedkCutoffs = () => {
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white"
                   >
-                    Cut-off Score
+                    Cut-off Rank
                   </th>
                 </tr>
               </thead>
               <tbody className="bg-gray-800 divide-y divide-gray-700">
-                {data.map((row, i) => (
+                {sortedData.map((row, i) => (
                   <tr
                     key={i}
                     className={`text-gray-100 hover:bg-gray-700 transition-colors duration-200 ease-in-out ${
