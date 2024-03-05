@@ -52,6 +52,7 @@ export default function srmjee() {
         <select
           value={selectedOption}
           onChange={handleChange}
+          onClick={() => {}}
           className=" text-white text-2xl p-3 mb-4 rounded-md"
           style={{
             backdropFilter: "blur(10px)",

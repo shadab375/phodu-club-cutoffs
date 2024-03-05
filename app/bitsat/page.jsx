@@ -65,6 +65,7 @@ export default function Bitsat() {
           value={selectedOption}
           onChange={handleChange}
           className=" text-white text-2xl p-3 mb-4 rounded-md"
+          onClick={() => {}}
           style={{
             backdropFilter: "blur(10px)",
             background: "rgba(18, 18, 18, 0.7)",
