@@ -34,11 +34,11 @@ const Home = () => {
         <select
           value={selectedExam}
           onChange={handleChange}
-          className="bg-[#252525] text-white text-2xl p-3 mb-4 rounded-md"
+          className="bg-[#252525] text-white text-2xl p-3 mb-4 rounded-md w-full"
         >
-          <option value="">Select exam</option>
+          <option value="">Select your exam</option>
           <option value="bitsat">BITSAT</option>
-          <option value="met">MET (Manipal Entrance Test)</option>
+          <option value="met">MET</option>
           <option value="comedk">COMEDK</option>
           <option value="viteee">VITEEE</option>
           <option value="srmjee">SRMJEEE</option>
