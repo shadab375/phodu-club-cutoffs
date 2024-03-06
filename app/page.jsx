@@ -30,6 +30,7 @@ const Home = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",
+        opacity: "1",
       }}
     >
       <div className="text-white flex flex-col items-center justify-center flex-grow ">

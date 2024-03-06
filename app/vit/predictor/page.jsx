@@ -103,8 +103,16 @@ const Predictor = () => {
           value="Submit"
         />
         <p className="text-sm mt-4 text-center">
-          Disclaimer: The predictor is based on last year's cutoff data.
+          Disclaimer: The college does not release the official cutoffs. This
+          data is a compilation of the information from various sources and
+          students.
         </p>
+        <div className="flex items-center font-bold">
+          <a href="https://phodu.club">
+            <h2 className="text-purple-500">Click here </h2>
+          </a>
+          <h2 className="ml-1.5">for relevant exam resources</h2>
+        </div>
       </form>
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -172,6 +180,18 @@ const Predictor = () => {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm font-medium">{result[2]}</div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="text-sm font-medium">{result[3]}</div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="text-sm font-medium">{result[4]}</div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="text-sm font-medium">{result[5]}</div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="text-sm font-medium">{result[6]}</div>
                     </td>
                   </tr>
                 ))}

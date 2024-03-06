@@ -331,6 +331,12 @@ const Predictor = () => {
         <p className="text-sm mt-4 text-center">
           Disclaimer: The predictor is based on last year's cutoff data.
         </p>
+        <div className="flex items-center font-bold">
+          <a href="https://phodu.club">
+            <h2 className="text-purple-500">Click here </h2>
+          </a>
+          <h2 className="ml-1.5">for relevant exam resources</h2>
+        </div>
       </form>
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">

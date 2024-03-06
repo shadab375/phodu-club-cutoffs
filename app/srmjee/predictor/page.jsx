@@ -12,29 +12,17 @@ const srmPredictor = () => {
   };
 
   const data = [
-    ["SRM Institute of Science & Technology", "Aerospace", 51500],
-    ["SRM Institute of Science & Technology", "Automobile", 54000],
-    ["SRM Institute of Science & Technology", "Biomedical", 53500],
-    ["SRM Institute of Science & Technology", "Biotechnical", 47700],
-    ["SRM Institute of Science & Technology", "Chemical", 69000],
-    ["SRM Institute of Science & Technology", "Civil", 69000],
-    ["SRM Institute of Science & Technology", "Computer Science", 9500],
-    [
-      "SRM Institute of Science & Technology",
-      "Electrical and Electronics",
-      39000,
-    ],
-    [
-      "SRM Institute of Science & Technology",
-      "Electronics and Communications",
-      26700,
-    ],
-    [
-      "SRM Institute of Science & Technology",
-      "Electronics and Instrumentation",
-      60000,
-    ],
-    ["SRM Institute of Science & Technology", "Genetic", 61500],
+    ["SRM IST KTR", "Aerospace", 51500],
+    ["SRM IST KTR", "Automobile", 54000],
+    ["SRM IST KTR", "Biomedical", 53500],
+    ["SRM IST KTR", "Biotechnical", 47700],
+    ["SRM IST KTR", "Chemical", 69000],
+    ["SRM IST KTR", "Civil", 69000],
+    ["SRM IST KTR", "Computer Science", 9500],
+    ["SRM IST KTR", "Electrical and Electronics", 39000],
+    ["SRM IST KTR", "Electronics and Communications", 26700],
+    ["SRM IST KTR", "Electronics and Instrumentation", 60000],
+    ["SRM IST KTR", "Genetic", 61500],
   ];
   const sortedData = data.sort((a, b) => a[2] - b[2]);
 
@@ -45,7 +33,7 @@ const srmPredictor = () => {
         className="flex flex-col items-center text-white px-6 py-3"
       >
         <label className="text-2xl font-bold mb-2">
-          Enter your SRMJEE rank:
+          Enter your SRMJEEE rank:
         </label>
         <input
           className="bg-gray-800 text-white text-lg rounded-lg px-4 py-2 mb-4 w-64"
@@ -54,13 +42,21 @@ const srmPredictor = () => {
           onChange={(e) => setCutoff(e.target.value)}
         />
         <input
-          className="bg-purple-500 text-white text-lg rounded-lg px-4 py-2 cursor-pointer hover:bg-purple-600 transition-colors duration-200 ease-in-out rounded-md"
+          className="bg-purple-500 text-white text-lg rounded-lg px-4 py-2 cursor-pointer hover:bg-purple-600 transition-colors duration-200 ease-in-out"
           type="submit"
           value="Submit"
         />
         <p className="text-sm mt-4 text-center">
-          Disclaimer: The predictor is based on last year's cutoff data.
+          Disclaimer: The college does not release the official cutoffs. This
+          data is a compilation of the information from various sources and
+          students.
         </p>
+        <div className="flex items-center font-bold">
+          <a href="https://phodu.club">
+            <h2 className="text-purple-500">Click here </h2>
+          </a>
+          <h2 className="ml-1.5">for relevant exam resources</h2>
+        </div>
       </form>
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
