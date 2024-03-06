@@ -68,6 +68,7 @@ export default function Bitsat() {
           onClick={() => {}}
           style={{
             backdropFilter: "blur(10px)",
+            WebkitBackdropFilter: "blur(10px)",
             background: "rgba(18, 18, 18, 0.7)",
           }}
         >
