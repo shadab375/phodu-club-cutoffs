@@ -63,7 +63,7 @@ export default function met() {
           />
         </div>
         <h1 className="text-4xl font-bold mb-8 text-center text-white z-10">
-          Do you want cutoff or branch predictor?
+          Cutoff or Predictor?
         </h1>
         <select
           value={selectedOption}
