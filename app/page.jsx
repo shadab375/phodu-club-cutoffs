@@ -25,9 +25,14 @@ const Home = () => {
   return (
     <div
       className="text-white flex flex-col items-center justify-center"
-      style={{ backgroundColor: "#131313", height: "100vh" }}
+      style={{
+        backgroundImage: "url('/bg.jpeg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "100vh",
+      }}
     >
-      <div className="text-white flex flex-col items-center justify-center flex-grow">
+      <div className="text-white flex flex-col items-center justify-center flex-grow ">
         <h1 className="text-4xl font-bold mb-8 text-center text-white">
           Choose your exam
         </h1>
@@ -45,19 +50,21 @@ const Home = () => {
         </select>
         <button
           onClick={handleSubmit}
-          className="bg-[#E39FF6] text-[#121212] text-2xl px-6 py-3 transition-all duration-300 hover:bg-[#C31DF4] hover:scale-110 rounded-md"
+          className="bg-[#E39FF6] text-[#121212] text-2xl px-5 py-2 mt-1 transition-all duration-300 hover:bg-[#C31DF4] hover:scale-110 rounded-md"
         >
           Submit
         </button>
       </div>
-      <div className="flex justify-center items-center py-4 font-poppins z-10">
-        <p className="text-lg font-semibold">
-          Made with <span style={{ color: "#e39ff6" }}>💜</span> by
-          <span className="font-bold text-white">
-            {" "}
-            phodu<span style={{ color: "#E39FF6" }}>.club</span>
-          </span>
-        </p>
+      <div className="bg-[#131313] w-full">
+        <div className="flex justify-center items-center my-2 py-0.5 px-1 font-poppins z-10">
+          <p className="text-lg font-semibold">
+            Made with <span style={{ color: "#e39ff6" }}>💜</span> by
+            <span className="font-bold text-white">
+              {" "}
+              phodu<span style={{ color: "#E39FF6" }}>.club</span>
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   );
