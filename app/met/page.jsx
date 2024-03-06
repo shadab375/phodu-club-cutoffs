@@ -70,8 +70,9 @@ export default function met() {
           onChange={handleChange}
           className=" text-white text-2xl p-3 mb-4 rounded-md"
           style={{
-            backdropFilter: "blur(10px)",
             background: "rgba(18, 18, 18, 0.7)",
+            WebkitBackdropFilter: "blur(10px)",
+            backdropFilter: "blur(10px)",
           }}
         >
           <option value="" className="rounded-lg">
