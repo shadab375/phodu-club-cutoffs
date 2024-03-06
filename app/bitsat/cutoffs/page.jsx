@@ -43,10 +43,6 @@ const BitsatCutoffs = () => {
 
   return (
     <div className="flex flex-col bg-gray-900">
-      <div className="text-white px-6 py-3">
-        Please note that the BITSAT maximum marks in AY 2023-2024 was 390,
-        whereas the maximum marks until 2021 was 450.
-      </div>
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
           <div className="flex items-center justify-center font-bold mb-2 mt-2">
@@ -75,7 +71,7 @@ const BitsatCutoffs = () => {
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white"
                   >
-                    Cut-off Score
+                    Cut-off Score (out of 390)
                   </th>
                 </tr>
               </thead>
