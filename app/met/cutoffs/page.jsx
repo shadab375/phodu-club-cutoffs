@@ -96,7 +96,9 @@ const metCutoffs = () => {
             <a href="https://phodu.club">
               <h2 className="text-purple-500">Click here </h2>
             </a>
-            <h2 className="ml-1.5 text-white">for relevant exam resources</h2>
+            <h2 className="ml-1.5 text-white">
+              to find the best resources for MET 2024
+            </h2>
           </div>
           <div className="shadow-lg overflow-hidden border-b border-gray-200 sm:rounded-lg">
             <table className="min-w-full divide-y divide-gray-200">

@@ -7,7 +7,7 @@ const Predictor = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const filteredData = sortedData.filter((item) => item[2] >= cutoff);
+    const filteredData = sortedData.filter((item) => item[6] >= cutoff);
     setResults(filteredData);
   };
 
@@ -111,7 +111,7 @@ const Predictor = () => {
           <a href="https://phodu.club">
             <h2 className="text-purple-500">Click here </h2>
           </a>
-          <h2 className="ml-1.5">for relevant exam resources</h2>
+          <h2 className="ml-1.5">to find the best resources for VITEEE 2024</h2>
         </div>
       </form>
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
