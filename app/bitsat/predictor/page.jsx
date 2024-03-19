@@ -7,8 +7,12 @@ const Predictor = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const filteredData = sortedData.filter((item) => item[2] <= score);
-    setResults(filteredData);
+    if (score > 426 || score < 0) {
+      alert("Please enter a valid BITSAT score");
+    } else {
+      const filteredData = sortedData.filter((item) => item[2] <= score);
+      setResults(filteredData);
+    }
   };
 
   const data = [
@@ -67,7 +71,10 @@ const Predictor = () => {
           className="bg-gray-800 text-white text-lg rounded-lg px-4 py-2 mb-4 w-64"
           type="number"
           value={score}
-          onChange={(e) => setScore(e.target.value)}
+          onChange={(e) => {
+            const value = e.target.value;
+            setScore(value);
+          }}
         />
         <input
           className="bg-purple-500 text-white text-lg rounded-lg px-4 py-2 cursor-pointer hover:bg-purple-600 transition-colors duration-200 ease-in-out"

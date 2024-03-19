@@ -7,8 +7,12 @@ const srmPredictor = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const filteredData = sortedData.filter((item) => item[2] >= cutoff);
-    setResults(filteredData);
+    if (cutoff < 0) {
+      alert("Please enter a valid rank");
+    } else {
+      const filteredData = sortedData.filter((item) => item[2] >= cutoff);
+      setResults(filteredData);
+    }
   };
 
   const data = [
