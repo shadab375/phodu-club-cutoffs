@@ -51,7 +51,7 @@ const Home = () => {
         </select>
         <button
           onClick={handleSubmit}
-          className="bg-[#B43FF5] text-[#FFFFFF] text-2xl px-5 py-2 mt-1 transition-all duration-300 hover:bg-[#B43FF5] hover:scale-110 rounded-md"
+          className="bg-[#B43FF5] text-[#FFFFFF] text-2xl px-5 py-2 mt-1 transition-all duration-300 hover:bg-[#B43FF5] hover:scale-110 rounded-md flex items-center justify-center"
         >
           Submit
         </button>
