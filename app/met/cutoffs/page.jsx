@@ -93,7 +93,11 @@ const metCutoffs = () => {
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
           <div className="flex items-center justify-center font-bold mb-2 mt-2">
-            <a href="https://phodu.club">
+            <a
+              href="https://phodu.club"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h2 className="text-purple-500">Click here </h2>
             </a>
             <h2 className="ml-1.5 text-white">
