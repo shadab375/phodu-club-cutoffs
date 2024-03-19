@@ -19,7 +19,7 @@ export default function Bitsat() {
   };
 
   useEffect(() => {
-    const images = ["/bits-hyderabad.jpg", "/bits-pilani.jpg", "/bits-goa.jpg"];
+    const images = ["/bits-pilani.jpg", "/bits-goa.jpg", "/bits-hyderabad.jpg"];
     let index = 0;
 
     const interval = setInterval(() => {

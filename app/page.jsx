@@ -26,14 +26,14 @@ const Home = () => {
     <div
       className="text-white flex flex-col items-center justify-center"
       style={{
-        backgroundImage: "url('/bg.jpeg')",
+        backgroundImage: "url('/bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",
         opacity: "1",
       }}
     >
-      <div className="text-white flex flex-col items-center justify-center flex-grow ">
+      <div className="text-white flex flex-col items-center justify-center flex-grow z-100">
         <h1 className="text-4xl font-bold mb-8 text-center text-white">
           Choose your exam
         </h1>
@@ -51,7 +51,7 @@ const Home = () => {
         </select>
         <button
           onClick={handleSubmit}
-          className="bg-[#E39FF6] text-[#121212] text-2xl px-5 py-2 mt-1 transition-all duration-300 hover:bg-[#C31DF4] hover:scale-110 rounded-md"
+          className="bg-[#8755FF] text-[#FFFFFF] text-2xl px-5 py-2 mt-1 transition-all duration-300 hover:bg-[#8755FF] hover:scale-110 rounded-md"
         >
           Submit
         </button>
