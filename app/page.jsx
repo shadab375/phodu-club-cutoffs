@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Head from "next/head";
 
 const Home = () => {
   const [selectedExam, setSelectedExam] = useState("");
@@ -33,6 +34,13 @@ const Home = () => {
         opacity: "1",
       }}
     >
+      <Head>
+        <title>Rank vs Branch vs Cutoff Predictor (2024) | Phodu Club</title>
+        <meta
+          name="description"
+          content="Predict your Rank, Branch & Cutoff for BITSAT, COMEDK, VITEEE, MET & SRMJEEE (2024) with Phodu Club's free Rank Predictor."
+        />
+      </Head>
       <div className="text-white flex flex-col items-center justify-center flex-grow z-100">
         <h1 className="text-4xl font-bold mb-8 text-center text-white">
           Choose your exam

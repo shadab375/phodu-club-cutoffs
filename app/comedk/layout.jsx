@@ -1,11 +1,9 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
-  title: "Rank vs Branch vs Cutoff Predictor (2024) | Phodu Club",
+  title: "COMEDK Rank vs Branch vs Cutoff Predictor (2024)",
   description:
-    "Predict your Rank, Branch & Cutoff for BITSAT, COMEDK, VITEEE, MET & SRMJEEE (2024) with Phodu Club's free Rank Predictor.",
+    "Our COMEDK Rank vs Branch vs Cutoff Predictor Tool can help you estimate your potential rank & explore branch options based on previous year's cut-offs.",
 };
 export default function RootLayout({ children }) {
   return (
@@ -26,7 +24,6 @@ export default function RootLayout({ children }) {
           }}
         >
           <main style={{ flex: "1 0 auto" }}>{children}</main>
-          <Footer style={{ flexShrink: "0" }} />
         </div>
       </body>
     </html>
