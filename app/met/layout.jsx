@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
-  title: "BITSAT Rank vs Branch vs Cutoff Predictor (2024)",
+  title: "MET Rank vs Branch vs Cutoff Predictor (2024)",
   description:
     "Our MET Rank vs Branch vs Cutoff Predictor Tool can help you estimate your potential rank & explore branch options based on previous year's cut-offs.",
 };
