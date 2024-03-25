@@ -17,7 +17,12 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={inter.className}
-        style={{ height: "100%", margin: "0", padding: "0" }}
+        style={{
+          height: "100%",
+          margin: "0",
+          padding: "0",
+          overflow: "hidden",
+        }}
       >
         <div
           style={{

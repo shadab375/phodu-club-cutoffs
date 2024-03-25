@@ -50,7 +50,7 @@ const Home = () => {
         <select
           value={selectedExam}
           onChange={handleChange}
-          className="bg-[#252525] text-white text-2xl p-3 mb-4 rounded-md w-full"
+          className="bg-[#252525] text-white text-2xl p-3 mb-4 rounded-md w-full custom-select"
         >
           <option value="">Select your exam</option>
           <option value="bitsat">BITSAT</option>

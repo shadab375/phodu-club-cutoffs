@@ -11,16 +11,13 @@ body {
   @apply bg-custom-gray;
 }
 
-select {
-  appearance: none;
-  background: url(https://www.flaticon.com/free-icons/arrow) no-repeat right
-    10px center #ffffff;
-  padding-right: 30px;
-}
-
 /* wrap text */
 .bootstrap-select .dropdown-menu .dropdown-item {
   white-space: normal;
+}
+
+.unscrollable {
+  overflow: hidden;
 }
 
 td,
