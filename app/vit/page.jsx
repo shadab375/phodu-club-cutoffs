@@ -74,9 +74,9 @@ export default function vit() {
           }}
         >
           <option value="">Please choose an option</option>
-          <option value="cutoffs">VIT Cutoffs</option>
-          <option value="predictor">VIT Branch Predictor</option>
           <option value="versus">VIT Marks vs Rank</option>
+          <option value="predictor">VIT Branch Predictor</option>
+          <option value="cutoffs">VIT Cutoffs</option>
         </select>
         <button
           onClick={handleSubmit}

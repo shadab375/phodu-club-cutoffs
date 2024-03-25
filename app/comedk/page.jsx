@@ -75,9 +75,9 @@ export default function met() {
           <option value="" className="rounded-lg">
             Please choose an option
           </option>
-          <option value="cutoffs">COMEDK Cutoffs</option>
-          <option value="predictor">COMEDK Branch Predictor</option>
           <option value="versus">COMEDK Marks vs Rank</option>
+          <option value="predictor">COMEDK Branch Predictor</option>
+          <option value="cutoffs">COMEDK Cutoffs</option>
         </select>
         <button
           onClick={handleSubmit}

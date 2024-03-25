@@ -63,9 +63,9 @@ export default function srmjee() {
           }}
         >
           <option value="">Please choose an option</option>
-          <option value="cutoffs">SRMJEEE Cutoffs</option>
-          <option value="predictor">SRMJEEE Branch Predictor</option>
           <option value="versus">SRMJEEE Marks vs Rank</option>
+          <option value="predictor">SRMJEEE Branch Predictor</option>
+          <option value="cutoffs">SRMJEEE Cutoffs</option>
         </select>
         <button
           onClick={handleSubmit}

@@ -80,9 +80,9 @@ export default function met() {
           <option value="" className="rounded-lg">
             Please choose an option
           </option>
-          <option value="cutoffs">MET Cutoffs</option>
-          <option value="predictor">MET Branch Predictor</option>
           <option value="versus">MET Marks vs Rank</option>
+          <option value="predictor">MET Branch Predictor</option>
+          <option value="cutoffs">MET Cutoffs</option>
         </select>
         <button
           onClick={handleSubmit}
