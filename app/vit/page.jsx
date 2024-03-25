@@ -15,6 +15,8 @@ export default function vit() {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/vit/cutoffs`;
     } else if (selectedOption === "predictor") {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/vit/predictor`;
+    } else if (selectedOption === "versus") {
+      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/vit/versus`;
     }
   };
 
@@ -74,6 +76,7 @@ export default function vit() {
           <option value="">Please choose an option</option>
           <option value="cutoffs">VIT Cutoffs</option>
           <option value="predictor">VIT Branch Predictor</option>
+          <option value="versus">VIT Marks vs Rank</option>
         </select>
         <button
           onClick={handleSubmit}

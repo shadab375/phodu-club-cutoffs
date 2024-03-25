@@ -15,6 +15,8 @@ export default function srmjee() {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/srmjee/cutoffs`;
     } else if (selectedOption === "predictor") {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/srmjee/predictor`;
+    } else if (selectedOption === "versus") {
+      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/srmjee/versus`;
     }
   };
 
@@ -63,6 +65,7 @@ export default function srmjee() {
           <option value="">Please choose an option</option>
           <option value="cutoffs">SRMJEEE Cutoffs</option>
           <option value="predictor">SRMJEEE Branch Predictor</option>
+          <option value="versus">SRMJEEE Marks vs Rank</option>
         </select>
         <button
           onClick={handleSubmit}

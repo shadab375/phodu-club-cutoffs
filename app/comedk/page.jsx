@@ -15,6 +15,8 @@ export default function met() {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/comedk/cutoffs`;
     } else if (selectedOption === "predictor") {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/comedk/predictor`;
+    } else if (selectedOption === "versus") {
+      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/comedk/versus`;
     }
   };
 
@@ -75,6 +77,7 @@ export default function met() {
           </option>
           <option value="cutoffs">COMEDK Cutoffs</option>
           <option value="predictor">COMEDK Branch Predictor</option>
+          <option value="versus">COMEDK Marks vs Rank</option>
         </select>
         <button
           onClick={handleSubmit}

@@ -15,6 +15,8 @@ export default function met() {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/met/cutoffs`;
     } else if (selectedOption === "predictor") {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/met/predictor`;
+    } else if (selectedOption === "versus") {
+      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/met/versus`;
     }
   };
 
@@ -80,6 +82,7 @@ export default function met() {
           </option>
           <option value="cutoffs">MET Cutoffs</option>
           <option value="predictor">MET Branch Predictor</option>
+          <option value="versus">MET Marks vs Rank</option>
         </select>
         <button
           onClick={handleSubmit}
