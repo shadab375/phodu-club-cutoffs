@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Rank vs Branch vs Cutoff Predictor (2024) | Phodu Club",
@@ -10,11 +9,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ height: "100%" }}>
-      <head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body
         className={inter.className}
         style={{
@@ -32,7 +26,6 @@ export default function RootLayout({ children }) {
           }}
         >
           <main style={{ flex: "1 0 auto" }}>{children}</main>
-          <Footer style={{ flexShrink: "0" }} />
         </div>
       </body>
     </html>
