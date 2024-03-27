@@ -312,7 +312,7 @@ export default function Page() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className="text-purple-500">Click here </h2>
+              <h2 className="text-purple-500 whitespace-nowrap">Click here </h2>
             </a>
             <h2 className="ml-1.5 text-white">
               to find the best resources for COMEDK 2024

@@ -335,15 +335,17 @@ const Predictor = () => {
         <p className="text-sm mt-4 text-center">
           Disclaimer: The predictor is based on last year's cutoff data.
         </p>
-        <div className="flex items-center font-bold">
+        <div className="flex items-center font-bold flex-nowrap">
           <a
             href="https://phodu.club"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className="text-purple-500">Click here </h2>
+            <h2 className="text-purple-500 whitespace-nowrap">Click here </h2>
           </a>
-          <h2 className="ml-1.5">to find the best resources for COMEDK 2024</h2>
+          <h2 className="ml-1.5 align-center">
+            to find the best resources for COMEDK 2024
+          </h2>
         </div>
       </form>
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">

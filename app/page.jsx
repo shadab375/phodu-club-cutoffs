@@ -22,6 +22,8 @@ const Home = () => {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/srmjee`;
     } else if (selectedExam === "kcet") {
       window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/kcet`;
+    } else if (selectedExam === "josaa") {
+      window.location.href = `${process.env.NEXT_PUBLIC_BASEURL}/josaa`;
     }
   };
 
@@ -59,6 +61,7 @@ const Home = () => {
           <option value="viteee">VITEEE</option>
           <option value="srmjee">SRMJEEE</option>
           <option value="kcet">KCET</option>
+          <option value="josaa">JOSAA</option>
         </select>
         <button
           onClick={handleSubmit}

@@ -111,13 +111,13 @@ const Predictor = () => {
           data is a compilation of the information from various sources and
           students.
         </p>
-        <div className="flex items-center font-bold">
+        <div className="flex items-center font-bold flex-nowrap">
           <a
             href="https://phodu.club"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className="text-purple-500">Click here </h2>
+            <h2 className="text-purple-500 whitespace-nowrap">Click here </h2>
           </a>
           <h2 className="ml-1.5">to find the best resources for VITEEE 2024</h2>
         </div>
