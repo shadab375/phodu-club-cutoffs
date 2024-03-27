@@ -43,7 +43,7 @@ const BitsatCutoffs = () => {
 
   return (
     <div className="flex flex-col bg-gray-900">
-      <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div className="-my-2 overflow-auto sm:-mx-6 lg:-mx-8">
         <div
           className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
           style={{ maxHeight: "100vh", overflowY: "auto" }}
